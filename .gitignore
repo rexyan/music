@@ -1,0 +1,13 @@
+node_modules
+coverage
+logs/**
+*.lcov
+.idea
+.vscode
+.git/
+.nyc_output
+npm-debug.log
+yarn-error.log
+debug.log
+Thumbs.db
+.DS_Store
