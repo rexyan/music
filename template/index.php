@@ -61,7 +61,7 @@ if (!defined('MC_CORE')) {
         <div class="am-container am-margin-vertical-xl">
             <header class="am-padding-vertical">
                 <h2 class="about-title about-color"><a href="./" style="cursor: pointer;">全站式音乐搜索</a></h2>
-                <p class="am-text-center">音乐搜索解决方案</p>
+                <p class="am-text-center"><a href="http://ourhome-china.cn/">OurHome</a></p>
             </header>
             <hr>
             <div class="am-u-lg-12 am-padding-vertical">
@@ -79,7 +79,7 @@ if (!defined('MC_CORE')) {
                             </li>
                         </ul>
                         <div class="am-form-group">
-                            <input id="j-input" data-filter="name" class="am-form-field am-input-lg am-text-left am-radius" placeholder="例如: 王力宏 千秋万代" data-am-loading="{loadingText: ' '}" pattern="^.+$" required>
+                            <input id="j-input" data-filter="name" class="am-form-field am-input-lg am-text-left am-radius" placeholder="例如: 千秋万代" data-am-loading="{loadingText: ' '}" pattern="^.+$" required>
                             <div class="am-alert am-alert-danger am-animation-shake"></div>
                         </div>
                         <div id="j-type" class="am-form-group am-text-center music-type">
@@ -187,11 +187,11 @@ if (!defined('MC_CORE')) {
                         <li>蜻蜓 FM 的音乐 ID 需要使用 <code>| (管道符)</code> 组合，例如 <code>158696|5266259</code></li>
                         <li>全民 K 歌的音乐名称请输入 <code>shareuid</code>，这是用户的 uid，搜索结果是该用户的所有公开作品</li>
                         <li>全民 K 歌的音乐 ID 请输入 <code>shareid</code> 这是单曲分享 id，搜索结果是该单曲信息</li>
-                        <li>酷我：http://www.kuwo.cn/yinyue/<span style="color: #c7254e">382425</span>/
+                        <li><u>酷我：http://www.kuwo.cn/yinyue/<span style="color: #c7254e">382425</u></span>/
                         <br>
-                        <li>虾米：http://www.xiami.com/song/<span style="color: #c7254e">2113248</span>
+                        <li><u>虾米：http://www.xiami.com/song/<span style="color: #c7254e">2113248</u></span>
                         <br>
-                        <li>百度：http://music.baidu.com/song/<span style="color: #c7254e">266069</span>
+                        <li><u>百度：http://music.baidu.com/song/<span style="color: #c7254e">266069</u></span>
                         <br>
                         ...      
                         </ul>

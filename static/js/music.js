@@ -79,7 +79,7 @@ $(function() {
   $('#j-nav').on('click', 'li', function() {
   
     var holder = {
-      name: '例如: 王力宏 千秋万代',
+      name: '例如: 千秋万代',
       id: '例如: 25643256',
       url: '例如: http://music.163.com/#/song?id=25643256',
       pattern_name: '^.+$',
