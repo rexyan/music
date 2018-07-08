@@ -37,7 +37,7 @@ function mc_curl($args = [])
         'proxy'      => false
     ];
     $args         = array_merge($default, $args);
-    $method       = mb_strtolower($args['method']);
+    $method       = strtolower($args['method']);
     $method_allow = ['get', 'post'];
     if (null === $args['url'] || !in_array($method, $method_allow, true)) {
         return;
@@ -1241,7 +1241,7 @@ function encode_netease_data($data)
 
 // 分割 songid 并获取
 function split_songid($songid, $index = 0, $delimiter = '|') {
-    if (mb_strpos($songid, $delimiter, 0, 'UTF-8') > 0) {
+    if (strpos($songid, $delimiter, 0, 'UTF-8') > 0) {
         $array = explode($delimiter, $songid);
         if (count($array) > 1) {
             return $array[$index];
@@ -1283,7 +1283,7 @@ function generate_kuwo_lrc($lrclist) {
 // jsonp 转 json
 function jsonp2json($jsonp) {
     if ($jsonp[0] !== '[' && $jsonp[0] !== '{') {
-        $jsonp = mb_substr($jsonp, mb_strpos($jsonp, '('));
+        $jsonp = substr($jsonp, strpos($jsonp, '('));
     }
     $json = trim($jsonp, "();");
     if ($json) {
